@@ -8,6 +8,8 @@ import theme from "../styles/theme";
 import OverviewChart from "../components/charts/overview-chart";
 import CustomerChart from "../components/charts/customer-chart";
 import DetailsCard from "../components/details-card";
+import Product from "./product";
+import Customers from "./customers";
 
 const Dashboard = () => {
   return (
@@ -30,6 +32,12 @@ const Dashboard = () => {
       <div css={chartContainer}>
         <OverviewChart />
         <CustomerChart />
+      </div>
+      <div css={productContainer}>
+        <Product />
+      </div>
+      <div>
+        <Customers />
       </div>
     </div>
   );
@@ -114,4 +122,8 @@ const cardContainer = css`
     flex-direction: row;
     justify-content: space-between;
   }
+`;
+
+const productContainer = css`
+  margin-bottom: 2em;
 `;

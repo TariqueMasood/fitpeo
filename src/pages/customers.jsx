@@ -189,16 +189,3 @@ const tableHeaderCss = css`
   font-weight: 400;
   border-bottom: 1px solid ${theme.colors.coolGray500};
 `;
-
-const stockCss = css`
-  font-size: 12px;
-`;
-
-const priceCss = css`
-  font-size: 12px;
-  font-weight: 600;
-`;
-
-const totalSaleCss = css`
-  font-size: 12px;
-`;
