@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/fitpeo/static/js/main.ad4e89bc.js",
+    "static/js/787.8e797e29.chunk.js": "/fitpeo/static/js/787.8e797e29.chunk.js",
+    "index.html": "/fitpeo/index.html",
+    "main.ad4e89bc.js.map": "/fitpeo/static/js/main.ad4e89bc.js.map",
+    "787.8e797e29.chunk.js.map": "/fitpeo/static/js/787.8e797e29.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ad4e89bc.js"
+  ]
+}
