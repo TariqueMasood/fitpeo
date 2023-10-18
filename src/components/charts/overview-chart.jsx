@@ -1,11 +1,22 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { Bar, BarChart, ResponsiveContainer, XAxis } from "recharts";
+import { Bar, BarChart, Cell, ResponsiveContainer, XAxis } from "recharts";
 import overviewData from "../../data/overview-chart-data.js";
 import theme from "../../styles/theme.js";
 import { mq } from "../../styles/breakpoints.js";
+import { useCallback, useState } from "react";
 
 const OverviewChart = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const activeItem = overviewData[activeIndex];
+
+  const handleClick = useCallback(
+    (entry, index) => {
+      setActiveIndex(index);
+    },
+    [setActiveIndex]
+  );
+
   return (
     <div css={containerCss}>
       <div css={chartHeaderCss}>
@@ -25,8 +36,16 @@ const OverviewChart = () => {
       <div css={chartContainer}>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart width={150} height={40} data={overviewData}>
-            <Bar dataKey="uv" fill="#0f06a7" />
-            <XAxis dataKey="name" />
+            <Bar dataKey="uv" fill="#0f06a7" radius={8} onClick={handleClick}>
+              {overviewData.map((entry, index) => (
+                <Cell
+                  cursor="pointer"
+                  fill={index === activeIndex ? "#302b8d" : "#e8e7f9"}
+                  key={`cell-${index}`}
+                />
+              ))}
+            </Bar>
+            <XAxis dataKey="name" tickLine={false} axisLine={false} />
           </BarChart>
         </ResponsiveContainer>
       </div>

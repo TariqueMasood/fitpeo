@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { Pie, PieChart, ResponsiveContainer, Sector } from "recharts";
+import { Cell, Pie, PieChart, ResponsiveContainer, Sector } from "recharts";
 import theme from "../../styles/theme.js";
 import { useState } from "react";
 
@@ -12,6 +12,8 @@ const data = [
 
 const CustomerChart = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
   const onPieEnter = (_, index) => {
     setActiveIndex(index);
@@ -78,7 +80,14 @@ const CustomerChart = () => {
               fill="#1150aa"
               dataKey="value"
               onMouseEnter={onPieEnter}
-            />
+            >
+              {data.map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={COLORS[index % COLORS.length]}
+                />
+              ))}
+            </Pie>
           </PieChart>
         </ResponsiveContainer>
       </div>
