@@ -8,6 +8,8 @@ import theme from "../styles/theme";
 import OverviewChart from "../components/charts/overview-chart";
 import CustomerChart from "../components/charts/customer-chart";
 import DetailsCard from "../components/details-card";
+import Customers from "./customers";
+import Product from "./product";
 
 const Dashboard = () => {
   return (
@@ -31,6 +33,10 @@ const Dashboard = () => {
         <OverviewChart />
         <CustomerChart />
       </div>
+      <div css={productContainer}>
+        <Product />
+      </div>
+      <Customers />
     </div>
   );
 };
@@ -105,13 +111,10 @@ const headerSearchBar = css`
 const cardContainer = css`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5em;
+  gap: 2em;
   margin-top: ${40 / 16}em;
+`;
 
-  ${mq("sm")} {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+const productContainer = css`
+  margin-bottom: 2em;
 `;

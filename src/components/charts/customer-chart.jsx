@@ -13,7 +13,7 @@ const data = [
 const CustomerChart = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+  const COLORS = ["#c9c7f9", "#534aec", "#ef2abe"];
 
   const onPieEnter = (_, index) => {
     setActiveIndex(index);

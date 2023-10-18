@@ -23,18 +23,13 @@ export default DetailsCard;
 
 const cardContainer = css`
   display: flex;
-  max-width: ${266 / 16}rem;
-  width: 100%;
+  flex: 1 0 ${250 / 16}rem;
   padding: 1em;
   background: #fff;
   border-radius: 8px;
   display: flex;
   align-items: center;
   gap: 1em;
-
-  ${mq("sm")} {
-    max-width: ${250 / 16}rem;
-  }
 
   :nth-of-type(1) {
     .icons {
