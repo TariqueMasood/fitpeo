@@ -23,7 +23,7 @@ export default DetailsCard;
 
 const cardContainer = css`
   display: flex;
-  flex: 1 0 ${250 / 16}rem;
+  flex: 1 0 auto;
   padding: 1em;
   background: #fff;
   border-radius: 8px;
