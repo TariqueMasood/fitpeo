@@ -3,7 +3,6 @@ import { css } from "@emotion/react";
 import { Bar, BarChart, Cell, ResponsiveContainer, XAxis } from "recharts";
 import overviewData from "../../data/overview-chart-data.js";
 import theme from "../../styles/theme.js";
-import { mq } from "../../styles/breakpoints.js";
 import { useCallback, useState } from "react";
 
 const OverviewChart = () => {
