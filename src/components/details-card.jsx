@@ -2,7 +2,6 @@
 import { css } from "@emotion/react";
 import GainLoss from "./gain-loss";
 import theme from "../styles/theme";
-import { mq } from "../styles/breakpoints";
 
 const DetailsCard = (props) => {
   return (
