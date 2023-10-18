@@ -2,6 +2,7 @@
 import { css } from "@emotion/react";
 import { BiSearch } from "react-icons/bi";
 import { mq } from "../styles/breakpoints";
+import productImg from "../images/product-1.jpg";
 import theme from "../styles/theme";
 
 const data = [
@@ -9,7 +10,7 @@ const data = [
     id: 1,
     product: {
       name: "Abstract 3D",
-      icon: "/images/product-1.jpg",
+      icon: productImg,
       description: "Some description",
     },
     stock: 32,
@@ -20,7 +21,7 @@ const data = [
     id: 2,
     product: {
       name: "Abstract 3D",
-      icon: "/images/product-1.jpg",
+      icon: productImg,
       description: "Some description",
     },
     stock: 32,
