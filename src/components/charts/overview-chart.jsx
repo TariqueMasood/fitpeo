@@ -8,7 +8,6 @@ import { useCallback, useState } from "react";
 
 const OverviewChart = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const activeItem = overviewData[activeIndex];
 
   const handleClick = useCallback(
     (entry, index) => {
