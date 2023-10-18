@@ -1,6 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
-
 const Income = () => {
   return (
     <div className="income">
