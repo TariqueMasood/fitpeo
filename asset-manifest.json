@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/fitpeo/static/js/main.6832e487.js",
+    "static/js/787.8e797e29.chunk.js": "/fitpeo/static/js/787.8e797e29.chunk.js",
+    "static/media/product-1.jpg": "/fitpeo/static/media/product-1.7a1dde60eb96674bcf7d.jpg",
+    "index.html": "/fitpeo/index.html",
+    "main.6832e487.js.map": "/fitpeo/static/js/main.6832e487.js.map",
+    "787.8e797e29.chunk.js.map": "/fitpeo/static/js/787.8e797e29.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6832e487.js"
+  ]
+}
