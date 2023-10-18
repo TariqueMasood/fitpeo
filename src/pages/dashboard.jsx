@@ -47,11 +47,12 @@ const chartContainer = css`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   gap: 2em;
   margin: 2em 0;
 
-  ${mq("xl")} {
-    justify-content: space-between;
+  ${mq("md")} {
+    flex-wrap: nowrap;
   }
 `;
 

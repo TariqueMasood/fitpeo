@@ -58,26 +58,31 @@ const containerCss = css`
   background-color: ${theme.colors.white};
   padding: 1.5em;
   border-radius: 8px;
+  width: 100%;
+  overflow-x: auto;
 `;
 
 const chartContainer = css`
+  display: flex;
+  flex: 1 0 auto;
+  width: 100%;
   height: 250px;
-  width: 250px;
+  // height: 250px;
+  // width: 250px;
 
-  ${mq("sm")} {
-    height: 250px;
-    width: 350px;
-  }
+  // ${mq("sm")} {
+  //   height: 250px;
+  //   width: 350px;
+  // }
 
-  ${mq("md")} {
-    height: 250px;
-    width: 500px;
-  }
+  // ${mq("md")} {
+  //   height: 250px;
+  //   width: 500px;
+  // }
 
-  ${mq("lg")} {
-    height: 250px;
-    width: 700px;
-  }
+  // ${mq("lg")} {
+  //   height: 300px;
+  // }
 `;
 
 const chartHeaderCss = css`

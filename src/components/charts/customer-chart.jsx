@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import { Cell, Pie, PieChart, ResponsiveContainer, Sector } from "recharts";
 import theme from "../../styles/theme.js";
 import { useState } from "react";
+import { mq } from "../../styles/breakpoints.js";
 
 const data = [
   { name: "65%", value: 650 },
@@ -101,14 +102,19 @@ const containerCss = css`
   background-color: ${theme.colors.white};
   padding: 1.5em;
   border-radius: 8px;
-  max-width: ${250 / 16}rem;
+  max-width: unset;
   width: 100%;
   height: 100%;
+
+  ${mq("md")} {
+    max-width: ${250 / 16}rem;
+  }
 `;
 
 const chartContainer = css`
   height: 250px;
   width: 250px;
+  margin: 0 auto;
 `;
 
 const chartHeaderCss = css`
