@@ -67,22 +67,6 @@ const chartContainer = css`
   flex: 1 0 auto;
   width: 100%;
   height: 250px;
-  // height: 250px;
-  // width: 250px;
-
-  // ${mq("sm")} {
-  //   height: 250px;
-  //   width: 350px;
-  // }
-
-  // ${mq("md")} {
-  //   height: 250px;
-  //   width: 500px;
-  // }
-
-  // ${mq("lg")} {
-  //   height: 300px;
-  // }
 `;
 
 const chartHeaderCss = css`
